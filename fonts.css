@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("fonts/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+* {
+    font-family: "Inter";
+}
+
+.heading, .logo > p {
+    font-family: "Raleway";
+}

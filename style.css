@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* navbar section */
+
+.nav {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background: white;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.aligner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 30px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigations > ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    font-weight: 500;
+}
+
+.navigations > ul > li:nth-last-child(1) {
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+    border-radius: 2px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.navigations > ul > li:nth-last-child(1):hover {
+    border: 1px solid #000;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+#menu-check:checked ~ .mobile-menu {
+    display: block;
+}
+
+.icon-image {
+    width: 20px;
+    transform: rotate(270deg);
+}
+
+.mobile-menu {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    background: #1a1a1a;
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+.mobile-menu li:nth-last-child(1) {
+    margin-bottom: 0px;
+}
+
+.mobile-menu a {
+    color:white;
+}
+
+/* hero section */
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(#edeff2,rgba(237,239,242,0));
+    margin-bottom: 20px;
+}
+
+.left-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.right-image {
+    width: 50%;
+    transform: translateX(27px);
+}
+
+.heading {
+    font-size: 56px;
+    padding-bottom: 30px;
+}
+
+.hero-text{
+    padding-bottom: 20px;
+}
+
+
+.hero-button{
+    padding: 10px 20px;
+    color: white;
+    background: #1a1a1a;
+    border: none;
+    width: fit-content;
+    border-radius: 2px;
+}
+
+.actual-hero-image {
+    width: 100%;
+}
+
+.know-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.know-more > .aligner {
+    flex-direction: column;
+}
+
+.sub-heading {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+    max-width: 800px;
+}
+
+.card-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    padding: 30px 0px;
+    padding-bottom: 120px;
+}
+
+.card:hover {
+   background: #1a1a1a;
+}
+
+.card:hover > * {
+    color: white;
+}
+
+.card {
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 23%;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.card-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .heading {
+        font-size: 45px;
+    }
+    
+    .aligner {
+        padding: 30px 60px;
+    }
+
+    .sub-heading {
+        font-size: 30px;
+    }
+
+    .card-container {
+        padding-bottom: 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .heading {
+        font-size: 34px;
+        padding-bottom: 20px;
+    }
+
+    .left-text {
+        width: 45%;
+    }
+    
+    .right-image {
+        width: 55%;
+    }
+
+    .navigations {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero .aligner {
+        flex-direction: column;
+    }
+
+    .left-text, .right-image {
+        width: 100%;
+    }
+
+    .right-image {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+        row-gap: 30px;
+    }
+
+    .aligner {
+        padding: 30px;
+    }
+
+    .mobile-menu {
+        right: 30px;
+    }
+}

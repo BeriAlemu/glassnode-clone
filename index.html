@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <title>Responsive ASS</title>
+</head>
+
+<body>
+
+    <section class="main-container">
+
+        <section class="nav">
+
+            <div class="aligner">
+                <div class="logo">
+                    <p>glassnode</p>
+                </div>
+                <div class="navigations">
+                    <ul>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Solution</a></li>
+                        <li><a href="#">Institutions</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </div>
+                <input type="checkbox" hidden id="menu-check">
+                <label for="menu-check" class="menu-icon"><img src="menu.png" class="icon-image" alt=""></label>
+                <div class="mobile-menu">
+                    <ul>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Solution</a></li>
+                        <li><a href="#">Institutions</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="hero">
+
+            <div class="aligner">
+                <div class="left-text">
+                    <h1 class="heading">Stay ahead of the trend in digital assets</h1>
+                    <p class="hero-text">Glassnode empowers traders and investors to anticipate the core trends and
+                        inflection points moving digital assets. We specialise in providing sophisticated blockchain and
+                        market data, offering unique insights into capital flows, asset fundamentals, and market
+                        sentiment
+                        in Bitcoin and Ethereum.</p>
+                    <button class="hero-button">Get in touch</button>
+                </div>
+                <div class="right-image">
+                    <img class="actual-hero-image" src="images/Pasted image (2).png"
+                        alt="This was supposed to be the hero image">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="know-more">
+
+            <div class="aligner">
+                <h2 class="sub-heading">Our pioneering data and analytics solutions are purpose-built for institutional
+                    needs</h2>
+                <div class="card-container">
+                    <div class="card one">
+                        <h3 class="card-title">Lorem ipsum dolor</h3>
+                        <p class="card-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa maiores
+                            aut possimus voluptates.</p>
+                        <p class="card-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa maiores
+                            aut possimus voluptates.</p>
+                    </div>
+                    <div class="card two">
+                        <h3 class="card-title"> sit amet lam grand</h3>
+                        <p class="card-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa maiores
+                            aut possimus voluptates.</p>
+                        <p class="card-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa maiores
+                            aut possimus voluptates.</p>
+                    </div>
+                    <div class="card three">
+                        <h3 class="card-title">consectetur adipiscing</h3>
+                        <p class="card-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa maiores
+                            aut possimus voluptates.</p>
+                        <p class="card-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa maiores
+                            aut possimus voluptates.</p>
+                    </div>
+                    <div class="card four">
+                        <h3 class="card-title">elit sed do eiusmod</h3>
+                        <p class="card-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa maiores
+                            aut possimus voluptates.</p>
+                        <p class="card-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa maiores
+                            aut possimus voluptates.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <script>
+
+        const theCheckbox = document.getElementById("menu-check");
+        const menuIcon = document.querySelector(".icon-image");
+
+        theCheckbox.addEventListener("change", function () {
+            if (theCheckbox.checked) {
+                menuIcon.src = "quirked-icon.png";
+            } else {
+                menuIcon.src = "menu.png";
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>
