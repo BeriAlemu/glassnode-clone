@@ -47,7 +47,7 @@
 
         </section>
 
-        <section class="hero">
+        <section class="hero" onclick="closeMenu()">
 
             <div class="aligner">
                 <div class="left-text">
@@ -67,7 +67,7 @@
 
         </section>
 
-        <section class="know-more">
+        <section class="know-more" onclick="closeMenu()">
 
             <div class="aligner">
                 <h2 class="sub-heading">Our pioneering data and analytics solutions are purpose-built for institutional
@@ -122,6 +122,10 @@
             }
         });
 
+        function closeMenu() {
+            theCheckbox.checked = false;
+            menuIcon.src = "menu.png";
+        }
 
     </script>
 </body>
